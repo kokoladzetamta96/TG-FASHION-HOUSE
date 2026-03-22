@@ -38,7 +38,7 @@
           </a>
           <a href="index.html" class="brand-name">TG FASHION HOUSE</a>
         </div>
-        <nav class="main-nav" aria-label="Main navigation">
+        <nav class="main-nav" id="mainNav">
           <ul class="menu">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#collection">Collection</a></li>
@@ -48,7 +48,7 @@
         </nav>
         <a href="#contact" class="consult-btn header-btn">Book Consultation</a>
 
-        <button class="burger-btn" aria-label="Open menu">
+         <button class="burger-btn" id="burgerBtn" aria-label="Open menu">
           <span></span>
           <span></span>
           <span></span>
@@ -118,35 +118,27 @@
     </div>
   </div>
 </section>
-
       <!-- about section -->
-      
       <section class="about-section" id="about">
   <div class="about-inner">
-    
     <!-- IMAGE -->
     <div class="about-image">
       <img src="images/about.jpeg" alt="Designer portrait" />
     </div>
-
     <!-- TEXT -->
     <div class="about-content">
       <h2 class="about-title">About</h2>
-
       <p class="about-text">
         I am Tamta Kokoladze - a designer focused on creating custom-made clothing 
         that reflects individuality and elegance.
       </p>
-
       <p class="about-text">
         Each garment is crafted with attention to detail, combining modern aesthetics 
         with personal style and comfort.
       </p>
-
       <p class="about-text">
         My goal is to help people express themselves through fashion in a way that feels natural and confident.
       </p>
-
       <!-- SOCIAL -->
     <div class="about-socials">
   <a href="https://www.facebook.com/profile.php?id=61565962381048" target="_blank" rel="noopener noreferrer">
@@ -171,18 +163,17 @@
 
     <!-- FORM -->
     <form class="contact-form">
-      <div class="form-row">
-        <input type="text" placeholder="First name" required>
-        <input type="text" placeholder="Last name" required>
-      </div>
+  <div class="form-row">
+    <input type="text" name="firstName" placeholder="First name" required>
+    <input type="text" name="lastName" placeholder="Last name" required>
+  </div>
 
-      <input type="email" placeholder="Email" required>
+  <input type="email" name="email" placeholder="Email" required>
 
-      <textarea placeholder="Your message"></textarea>
+  <textarea name="message" placeholder="Your message" required></textarea>
 
-      <button type="submit">Send</button>
-    </form>
-
+  <button type="submit">Send</button>
+</form>
     <!-- INFO -->
     <div class="contact-info">
 
@@ -215,7 +206,40 @@
 
   </div>
 </section>
-
     </main>
+    <footer class="site-footer">
+  <div class="footer-inner">
+
+    <!-- Brand -->
+    <div class="footer-col">
+      <h3><a href="#">TG Fashion House</a></h3>
+      <p>Custom-made clothing for individuality and elegance.</p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+     <p>Email: <a href="mailto:info@tgfashionhouse.com">info@tgfashionhouse.com</a></p>
+     <p><a href="#contact">Batumi, Georgia</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 TG Fashion House</p>
+  </div>
+</footer>
+<script src="script.js"></script>
   </body>
 </html>
